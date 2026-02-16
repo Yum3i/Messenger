@@ -1,8 +1,8 @@
 CC=g++
 CFLAGS=-std=c++11 -Wall -Wextra
-SOURCES=main.cpp Connection.cpp
+SOURCES=src/main.cpp src/Connection.cpp src/Work.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=client2
+EXECUTABLE=server
 all: $(SOURCES) $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
